@@ -9,5 +9,6 @@ Rockbuster   Stealth   LLC   is   a   movie   rental   company   that   used   t
 # Data
 The data for this project is provided by Career Foundry in the project brief, and the analysis was done using relational database management system PostgreSQL. The data set contains information about Rockbuster's film inventory, customers, payments, rentals, staffs, stores, movies and languages.
 # Visualizations
-Visualizations for this project was created in Tableau and the link for the presentation can be found here: 
-[Task 3.10 - Presenting SQL Results.pptx](https://github.com/saranyaprabhakar22/SQL-Rockbuster/files/13892894/Task.3.10.-.Presenting.SQL.Results.pptx)
+Visualizations of this project was created in Tableau and the link for the presentation can be found here: [Task 3.10 - Presenting SQL Results.pptx](https://github.com/saranyaprabhakar22/SQL-Rockbuster/files/13902677/Task.3.10.-.Presenting.SQL.Results.pptx)
+ 
+
