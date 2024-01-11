@@ -1,0 +1,18 @@
+# Here is a SQL Query which uses JOIN to find the top 5 customers in the top 10 cities who have paid the highest total amounts to Rockbuster.
+This was done as the customer team wanted to reward them for their loyalty.
+
+-- the top 5 customers from the top 10 cities who have paid the highest total amount to Rockbuster
+
+SELECT A.customer_id, A.first_name, A.last_name, D.country, C.city,
+SUM(E.amount) AS total_amt_paid
+FROM customer A
+INNER JOIN address B ON A.address_id = B.address_id
+INNER JOIN city C ON B.city_id = C.city_id
+INNER JOIN country D ON C.country_id = D.country_id
+INNER JOIN payment E ON A.customer_id = E.customer_id
+WHERE C.city IN ('Aurora','Acua','Citrus Heights','Iwaki','Ambattur','Shanwei',
+	    'So Leopoldo','Teboksary','Tianjin','Cianjur')
+GROUP BY A.customer_id, A.first_name, A.last_name, D.country, C.city
+ORDER BY total_amt_paid DESC
+LIMIT 5;
+	
